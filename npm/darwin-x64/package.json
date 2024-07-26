@@ -1,5 +1,5 @@
 {
-  "name": "@cli-test/clap-darwin-x64",
+  "name": "@dlozina/clap-darwin-x64",
   "version": "0.0.4",
   "os": [
     "darwin"
@@ -11,8 +11,10 @@
   "files": [
     "clap.darwin-x64.node"
   ],
+  "description": "Test publish procedure",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "https://github.com/dlozina/clap.git"
 }

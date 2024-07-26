@@ -1,5 +1,5 @@
 {
-  "name": "@cli-test/clap-linux-x64-gnu",
+  "name": "@dlozina/clap-linux-x64-gnu",
   "version": "0.0.4",
   "os": [
     "linux"
@@ -11,10 +11,12 @@
   "files": [
     "clap.linux-x64-gnu.node"
   ],
+  "description": "Test publish procedure",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
   },
+  "repository": "https://github.com/dlozina/clap.git",
   "libc": [
     "glibc"
   ]

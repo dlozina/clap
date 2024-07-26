@@ -1,3 +1,3 @@
-# `@cli-test/clap-darwin-arm64`
+# `@dlozina/clap-darwin-arm64`
 
-This is the **aarch64-apple-darwin** binary for `@cli-test/clap`
+This is the **aarch64-apple-darwin** binary for `@dlozina/clap`

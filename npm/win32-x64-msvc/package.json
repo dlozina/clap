@@ -1,5 +1,5 @@
 {
-  "name": "@cli-test/clap-win32-x64-msvc",
+  "name": "@dlozina/clap-win32-x64-msvc",
   "version": "0.0.4",
   "os": [
     "win32"
@@ -11,8 +11,10 @@
   "files": [
     "clap.win32-x64-msvc.node"
   ],
+  "description": "Test publish procedure",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
-  }
+  },
+  "repository": "https://github.com/dlozina/clap.git"
 }

@@ -1,3 +1,3 @@
-# `@cli-test/clap-win32-x64-msvc`
+# `@dlozina/clap-win32-x64-msvc`
 
-This is the **x86_64-pc-windows-msvc** binary for `@cli-test/clap`
+This is the **x86_64-pc-windows-msvc** binary for `@dlozina/clap`

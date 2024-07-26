@@ -67,7 +67,7 @@ switch (platform) {
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./clap.win32-x64-msvc.node')
+            nativeBinding = require('./npm/win32-x64-msvc')
           } else {
             nativeBinding = require('@cli-test/clap-win32-x64-msvc')
           }
@@ -122,7 +122,7 @@ switch (platform) {
         localFileExisted = existsSync(join(__dirname, 'clap.darwin-x64.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./clap.darwin-x64.node')
+            nativeBinding = require('./npm/darwin-x64')
           } else {
             nativeBinding = require('@cli-test/clap-darwin-x64')
           }
@@ -136,7 +136,7 @@ switch (platform) {
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./clap.darwin-arm64.node')
+            nativeBinding = require('./npm/darwin-arm64')
           } else {
             nativeBinding = require('@cli-test/clap-darwin-arm64')
           }
@@ -185,7 +185,7 @@ switch (platform) {
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./clap.linux-x64-gnu.node')
+              nativeBinding = require('./npm/linux-x64-gnu')
             } else {
               nativeBinding = require('@cli-test/clap-linux-x64-gnu')
             }
