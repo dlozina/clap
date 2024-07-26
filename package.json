@@ -37,12 +37,6 @@
     "universal": "napi universal",
     "version": "napi version"
   },
-  "optionalDependencies": {
-    "@cli-test/clap-win32-x64-msvc": "0.0.4",
-    "@cli-test/clap-darwin-x64": "0.0.4",
-    "@cli-test/clap-linux-x64-gnu": "0.0.4",
-    "@cli-test/clap-darwin-arm64": "0.0.4"
-  },
   "repository": "https://github.com/dlozina/clap.git",
   "description": "Test publish procedure"
 }

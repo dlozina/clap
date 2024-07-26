@@ -37,7 +37,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./clap.android-arm64.node')
           } else {
-            nativeBinding = require('@cli-test/clap-android-arm64')
+            nativeBinding = require('@dlozina/clap-android-arm64')
           }
         } catch (e) {
           loadError = e
@@ -49,7 +49,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./clap.android-arm-eabi.node')
           } else {
-            nativeBinding = require('@cli-test/clap-android-arm-eabi')
+            nativeBinding = require('@dlozina/clap-android-arm-eabi')
           }
         } catch (e) {
           loadError = e
@@ -67,9 +67,9 @@ switch (platform) {
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./npm/win32-x64-msvc')
+            nativeBinding = require('./clap.win32-x64-msvc.node')
           } else {
-            nativeBinding = require('@cli-test/clap-win32-x64-msvc')
+            nativeBinding = require('@dlozina/clap-win32-x64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -83,7 +83,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./clap.win32-ia32-msvc.node')
           } else {
-            nativeBinding = require('@cli-test/clap-win32-ia32-msvc')
+            nativeBinding = require('@dlozina/clap-win32-ia32-msvc')
           }
         } catch (e) {
           loadError = e
@@ -97,7 +97,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./clap.win32-arm64-msvc.node')
           } else {
-            nativeBinding = require('@cli-test/clap-win32-arm64-msvc')
+            nativeBinding = require('@dlozina/clap-win32-arm64-msvc')
           }
         } catch (e) {
           loadError = e
@@ -113,7 +113,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./clap.darwin-universal.node')
       } else {
-        nativeBinding = require('@cli-test/clap-darwin-universal')
+        nativeBinding = require('@dlozina/clap-darwin-universal')
       }
       break
     } catch {}
@@ -122,9 +122,9 @@ switch (platform) {
         localFileExisted = existsSync(join(__dirname, 'clap.darwin-x64.node'))
         try {
           if (localFileExisted) {
-            nativeBinding = require('./npm/darwin-x64')
+            nativeBinding = require('./clap.darwin-x64.node')
           } else {
-            nativeBinding = require('@cli-test/clap-darwin-x64')
+            nativeBinding = require('@dlozina/clap-darwin-x64')
           }
         } catch (e) {
           loadError = e
@@ -136,9 +136,9 @@ switch (platform) {
         )
         try {
           if (localFileExisted) {
-            nativeBinding = require('./npm/darwin-arm64')
+            nativeBinding = require('./clap.darwin-arm64.node')
           } else {
-            nativeBinding = require('@cli-test/clap-darwin-arm64')
+            nativeBinding = require('@dlozina/clap-darwin-arm64')
           }
         } catch (e) {
           loadError = e
@@ -157,7 +157,7 @@ switch (platform) {
       if (localFileExisted) {
         nativeBinding = require('./clap.freebsd-x64.node')
       } else {
-        nativeBinding = require('@cli-test/clap-freebsd-x64')
+        nativeBinding = require('@dlozina/clap-freebsd-x64')
       }
     } catch (e) {
       loadError = e
@@ -174,7 +174,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./clap.linux-x64-musl.node')
             } else {
-              nativeBinding = require('@cli-test/clap-linux-x64-musl')
+              nativeBinding = require('@dlozina/clap-linux-x64-musl')
             }
           } catch (e) {
             loadError = e
@@ -185,9 +185,9 @@ switch (platform) {
           )
           try {
             if (localFileExisted) {
-              nativeBinding = require('./npm/linux-x64-gnu')
+              nativeBinding = require('./clap.linux-x64-gnu.node')
             } else {
-              nativeBinding = require('@cli-test/clap-linux-x64-gnu')
+              nativeBinding = require('@dlozina/clap-linux-x64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -203,7 +203,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./clap.linux-arm64-musl.node')
             } else {
-              nativeBinding = require('@cli-test/clap-linux-arm64-musl')
+              nativeBinding = require('@dlozina/clap-linux-arm64-musl')
             }
           } catch (e) {
             loadError = e
@@ -216,7 +216,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./clap.linux-arm64-gnu.node')
             } else {
-              nativeBinding = require('@cli-test/clap-linux-arm64-gnu')
+              nativeBinding = require('@dlozina/clap-linux-arm64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -232,7 +232,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./clap.linux-arm-musleabihf.node')
             } else {
-              nativeBinding = require('@cli-test/clap-linux-arm-musleabihf')
+              nativeBinding = require('@dlozina/clap-linux-arm-musleabihf')
             }
           } catch (e) {
             loadError = e
@@ -245,7 +245,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./clap.linux-arm-gnueabihf.node')
             } else {
-              nativeBinding = require('@cli-test/clap-linux-arm-gnueabihf')
+              nativeBinding = require('@dlozina/clap-linux-arm-gnueabihf')
             }
           } catch (e) {
             loadError = e
@@ -261,7 +261,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./clap.linux-riscv64-musl.node')
             } else {
-              nativeBinding = require('@cli-test/clap-linux-riscv64-musl')
+              nativeBinding = require('@dlozina/clap-linux-riscv64-musl')
             }
           } catch (e) {
             loadError = e
@@ -274,7 +274,7 @@ switch (platform) {
             if (localFileExisted) {
               nativeBinding = require('./clap.linux-riscv64-gnu.node')
             } else {
-              nativeBinding = require('@cli-test/clap-linux-riscv64-gnu')
+              nativeBinding = require('@dlozina/clap-linux-riscv64-gnu')
             }
           } catch (e) {
             loadError = e
@@ -289,7 +289,7 @@ switch (platform) {
           if (localFileExisted) {
             nativeBinding = require('./clap.linux-s390x-gnu.node')
           } else {
-            nativeBinding = require('@cli-test/clap-linux-s390x-gnu')
+            nativeBinding = require('@dlozina/clap-linux-s390x-gnu')
           }
         } catch (e) {
           loadError = e
