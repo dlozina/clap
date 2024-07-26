@@ -1,6 +1,6 @@
 {
   "name": "@dlozina/clap",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.js",
   "bin": "bin.js",
   "types": "index.d.ts",
