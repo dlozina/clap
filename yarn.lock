@@ -11,6 +11,8 @@ __metadata:
   dependencies:
     "@napi-rs/cli": "npm:^2.18.4"
     ava: "npm:^6.0.1"
+  bin:
+    clap: bin.js
   languageName: unknown
   linkType: soft
 
